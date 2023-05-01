@@ -4,27 +4,42 @@ import Button from '../components/Button.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<h1>Vi blir <span class="text-gradient">Omegapoint!...</span>på riktigt	</h1>
-		<p class="instructions">
+	<main class="main">
+		<h1 class="heading">Vi blir <span class="text-gradient">Omegapoint!...</span>på riktigt	</h1>
+		<p>
 			I juni 2021 lanserade vi att Integrationsbolaget och Molnbolaget förvärvas av konsultbolaget Omegapoint. Vi har sedan dess haft kvar våra företagsnamn, Integrationsbolaget och Molnbolaget. För att bli tydligare som organisation i kommunikation och varumärke med våra kunder, leverantörer och rekryter, ser vi det nu som självklart att byta namn till Omegapoint. 
+			<br/><br/>
 			Vårt erbjudande har utökats med kompetens inom cybersäker digitalisering. Med premiumexpertis inom våra respektive områden, har vi stärkt varandra i leveranskapacitet och kompletterat varandras erbjudanden. Nu flyttar vår web ihop med Omegapoint och här läser du mer om våra tjänster.
 		</p>
 		<Button></Button>
-
 	</main>
 </Layout>
 
 <style>
 	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		height: 100%;
+		margin: 0px;
+		padding: 0px;
+		max-width: 1024px;
+		border: 1px solid yellow;
 	}
 	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
+		font-size: 32px;
+		font-weight: 700;
+		margin: 16px 0px;
+		padding: 0px;
+		border: 1px solid red;
+	}
+	p {
+		font-size: 18px;
+		font-weight: 400;
+		margin: 0px;
+		padding: 0px;		
+		border: 1px solid red;
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
