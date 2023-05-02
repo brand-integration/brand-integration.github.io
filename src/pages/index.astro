@@ -91,21 +91,21 @@ import Button from "../components/Button.astro";
     }
   }
   .content {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     z-index: -1;
     background-size: cover;
-	filter: brightness(70%);
-	playback-rate: 1;
+    filter: brightness(70%);
+    playback-rate: 1;
   }
   .content video {
     width: 100vw;
-	height: 100vh;
+    height: 100vh;
     display: block;
-	object-fit: cover;
+    object-fit: cover;
   }
   .content:before {
     content: "";
@@ -116,8 +116,8 @@ import Button from "../components/Button.astro";
     right: 0;
     bottom: 0;
     left: 0;
-	opacity: 0.5;
-	mix-blend-mode: color;
-	filter: contrast(1.95);
+    opacity: 0.5;
+    mix-blend-mode: color;
+    filter: contrast(1.95);
   }
 </style>
